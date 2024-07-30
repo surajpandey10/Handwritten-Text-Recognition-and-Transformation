@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwritten Text Recognition & Transformation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Handwritten Text Recognition & Transformation System</h1>
+    <div id="wrapper"> 
+        <h2>Project Input</h2>
+        <div id="input-section">
+            <div class="input-group">
+                <label for="image-upload">Upload Image:</label>
+                <input type="file" id="image-upload" accept="image/*">
+                <img id="input-preview" alt="Input Image Preview" style="display: none;">
+            </div>
+
+            <div class="input-group">
+                <h5>Handwriting Options</h5>
+                <label for="handwriting-option">Handwriting Style</label>
+                <select id="handwriting-option">
+                    <option value="1">Option1</option>
+                    <option value="2">Option2</option>
+                    <option value="3">Option3</option>
+                    <option value="4">Option4</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <h5>Page & Text Options</h5>
+                <label for="font-size">Font Size</label>
+                <input type="number" id="font-size" min="1" value="16">
+                
+                <label for="text-color">Text Color:</label>
+                <input type="color" id="text-color" value="#000000">
+                
+                <label for="page-color">Page Color:</label>
+                <input type="color" id="page-color" value="#ffffff">
+                
+                <label for="page-width">Page Width:</label>
+                <input type="number" id="page-width" min="1" value="600">
+                
+                <label for="page-height">Page Height:</label>
+                <input type="number" id="page-height" min="1" value="400">
+            </div>
+        </div>
+
+        <button id="process-button">Process</button>
+
+        <div id="output-section">
+            <h2>Output</h2>
+            <img id="output-image" alt="Processed Image" style="display: none;">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
